@@ -20,9 +20,9 @@ $field_count =$count["field_count"];
 
 $num=1;
 $arr_fields=range(1,$field_count);
-$num=array_rand($arr_fileds,1);
-
-print_r($count);
+$num_arr=array_rand($arr_fileds,1);
+$num=$num_arr[];
+print_r($num_arr);
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
