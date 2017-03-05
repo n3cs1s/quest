@@ -19,8 +19,8 @@ $field_count =$count["field_count"];
 //Вибирає останню додану загадкку, для вибору випадкової - створити $arr_fields=range(1,$field_count), потім $num=array_rand($array_fileds,1);
 
 $num=1;
-$arr_fields=range(1,$field_count);
-$num_arr=array_rand($arr_fileds,1);
+/*$arr_fields=range(1,$field_count);
+$num_arr=array_rand($arr_fileds,1);*/
 //$num=$num_arr[];
 //print_r($num_arr);
 
