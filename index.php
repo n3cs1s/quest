@@ -15,7 +15,7 @@ $connect->query("SET character_set_results=utf8");
 
 $count=$connect->query("SELECT COUNT(*) FROM ".$table);
 
-//$field_count =$count["field_count"]; 
+$field_count =$count[]["field_count"]; 
 //Вибирає останню додану загадкку, для вибору випадкової - створити $arr_fields=range(1,$field_count), потім $num=array_rand($array_fileds,1);
 
 $num=1;
