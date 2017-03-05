@@ -20,13 +20,13 @@ $count=$connect->query("SELECT COUNT(*) FROM ".$table);
 
 $num=1;
 while($cnt = mysqli_fetch_row($count)) {
-        echo $cnt[0]."; 1-".$cnt[1].";<br />";
+        $field_count= $cnt[0];
     }
 $arr_fields=range(1,$field_count);
 $num_arr=array_rand($arr_fileds,1);
 //$num=$num_arr[];
-print_r($arr_fileds);
-echo "Field_count - ".$filed_count.";<br />";
+print_r($num_arr);
+//echo "Field_count - ".$filed_count.";<br />";
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
