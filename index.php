@@ -19,6 +19,7 @@ $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 $connect->query("SET character_set_results=utf8");
 
 $count=$connect->query("SELECT COUNT(*) FROM ".$table);
+print_f($count);
 
 
 $result = $connect->query($sql);
