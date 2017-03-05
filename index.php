@@ -1,6 +1,5 @@
 <?php
 include "config/settings.php";
-header('Content-Type: text/html; charset=utf-8');
 /*
 
 get from database $id, $quest, $answ;
@@ -38,10 +37,10 @@ $pictures=array_rand($arr,9);
 $pictures[]=$id;
 shuffle($pictures);
 
+header('Content-Type: text/html; charset=utf-8');
+
 ?>
 
-<html>
-<head>
 <title>
 Відгадай.com
 </title>
