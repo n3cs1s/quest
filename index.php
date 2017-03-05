@@ -22,10 +22,10 @@ $num=1;
 while($cnt = $count->fetch_assoc()) {
         $field_count=$cnt["field_count"];
     }
-/*$arr_fields=range(1,$field_count);
-$num_arr=array_rand($arr_fileds,1);*/
+$arr_fields=range(1,$field_count);
+$num_arr=array_rand($arr_fileds,1);
 //$num=$num_arr[];
-//print_r($count);
+print_r($num_arr);
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
