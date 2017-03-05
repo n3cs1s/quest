@@ -15,7 +15,7 @@ $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
 $result = $connect->query($sql);
 $id=1;
-$quest="Хто малюнки на вікні уночі зробив мені?";
+$quest="?";
 $answ="Мороз";
 
 
