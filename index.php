@@ -1,5 +1,6 @@
 <?php
 include "config/settings.php";
+header('Content-Type: text/html; charset=utf-8');
 /*
 
 get from database $id, $quest, $answ;
