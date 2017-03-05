@@ -1,5 +1,5 @@
 <?php
-include "/config/settings.php";
+include "config/settings.php";
 /*
 
 get from database $id, $quest, $answ;
