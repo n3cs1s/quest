@@ -23,6 +23,8 @@ while($cnt = mysqli_fetch_row($count)) {
         $field_count= $cnt[0];
     }
 $arr_fields=range(1,$field_count);
+print_r($arr_fields);
+
 $num_arr=array_rand($arr_fileds,1);
 //$num=$num_arr[];
 print_r($num_arr);
