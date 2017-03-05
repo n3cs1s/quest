@@ -1,9 +1,19 @@
 <?php
-$vid=3;
+
+/*
+
+get from database $id, $quest, $answ;
+
+*/
+
+$id=3;
+$quest="Хто малюнки на вікні уночі зробив мені?";
+$answ="Мороз";
 $arr=range(1,10);
 $pictures=array_rand($arr,9);
-$pictures[]=$vid;
+$pictures[]=$id;
 shuffle($pictures);
+
 ?>
 
 <html>
@@ -43,7 +53,7 @@ while(list(,$picture) = each($pictures)){
 <?php
 
 
-echo "Хто малюнки на вікні уночі зробив мені?";
+echo $quest;
 
 
 ?>
@@ -52,7 +62,11 @@ echo "Хто малюнки на вікні уночі зробив мені?";
 </div>
 <div id="res">
 <h1>
-Мороз!</h1>
+<?php
+	echo $answ;
+	
+?>
+	</h1>
 </div>
 <div class="footer">
 <div class="content">
@@ -65,7 +79,7 @@ echo "Хто малюнки на вікні уночі зробив мені?";
 
 <script>
 $("img").click(function(){
-	if( $(this).attr("src") == "/images/3.jpg" ){
+	if( $(this).attr("src") == "/images/"+<?php echo $id; ?>+".jpg" ){
 		$("#res").css("background-image","url("+$(this).attr("src")+")");
 		$("#res").show();
 		$(".back-img").slideUp();
