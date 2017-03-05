@@ -5,6 +5,8 @@ include "/config/settings.php";
 get from database $id, $quest, $answ;
 
 */
+echo $server." " .$user." ".$pass." ".$db." <br />";
+
 $connect = new mysqli($server,$user,$pass,$db);
 if($connect->connect_error){
 	die("Can't connect to database".$connect->connect_error);
