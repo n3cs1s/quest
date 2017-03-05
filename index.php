@@ -12,12 +12,15 @@ if($connect->connect_error){
 }
 $num =1;
 
-$count=$connect->query("SELECT COUNT(*) FROM ".$table);
-printf($count);
+//printf($count);
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
 $connect->query("SET character_set_results=utf8");
+
+$count=$connect->query("SELECT COUNT(*) FROM ".$table);
+
+
 $result = $connect->query($sql);
 $id=1;
 $quest="?";
