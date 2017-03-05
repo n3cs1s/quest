@@ -5,6 +5,27 @@ include("/config/settings.php");
 get from database $id, $quest, $answ;
 
 */
+$connect = new mysqli($server,$user,$pass,$db);
+if($connect->connect_error){
+	die("Can't connect to database");
+}
+$num =1;
+$sql = "SELECT * FROM ".$table." WHERE id=".$num;
+
+$result = $connect->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $id=$row["id"];
+	$quest=$row["quest"];
+	$answ=$row["answ"];
+    }
+} else {
+    echo "0 results";
+}
+
+$connect->close();
 
 $id=1;
 $quest="Хто малюнки на вікні уночі зробив мені?";
