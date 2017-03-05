@@ -25,9 +25,9 @@ while($cnt = mysqli_fetch_row($count)) {
 $arr_fields=range(1,$field_count);
 print_r($arr_fields);
 
-$num_arr=array_rand($arr_fileds,1);
+$num_arr=$arr_fields[mt_rand(0, count($arr_fields) - 1)];
 //$num=$num_arr[];
-print_r($num_arr);
+//print_r($num_arr);
 echo $num_arr;
 //echo "Field_count - ".$filed_count.";<br />";
 
