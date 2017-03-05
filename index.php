@@ -5,7 +5,6 @@ include "config/settings.php";
 get from database $id, $quest, $answ;
 
 */
-echo $server." " .$user." ".$pass." ".$db." <br />";
 
 $connect = new mysqli($server,$user,$pass,$db);
 if($connect->connect_error){
@@ -15,6 +14,10 @@ $num =1;
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
 $result = $connect->query($sql);
+$id=1;
+$quest="Хто малюнки на вікні уночі зробив мені?";
+$answ="Мороз";
+
 
 if ($result->num_rows > 0) {
     // output data of each row
@@ -29,9 +32,6 @@ if ($result->num_rows > 0) {
 
 $connect->close();
 
-$id=1;
-$quest="Хто малюнки на вікні уночі зробив мені?";
-$answ="Мороз";
 $arr=range(1,10);
 $pictures=array_rand($arr,9);
 $pictures[]=$id;
