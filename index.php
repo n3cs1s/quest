@@ -10,16 +10,21 @@ $connect = new mysqli($server,$user,$pass,$db);
 if($connect->connect_error){
 	die("Can't connect to database".$connect->connect_error);
 }
-$num =1;
-
-
-$sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
 $connect->query("SET character_set_results=utf8");
 
 $count=$connect->query("SELECT COUNT(*) FROM ".$table);
 
+$field_count =$count["field_count"]; 
+///Вибирає останню додану загадкку, для вибору випадкової - створити $arr_fields=range(1,$field_count), потім $num=array_rand($array_fileds,1);
+
+$num=1;
+$arr_fields=range(1,$field_count);
+$num=array_rand($arr_fileds,1);
+
 print_r($count);
+
+$sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
 
 $result = $connect->query($sql);
