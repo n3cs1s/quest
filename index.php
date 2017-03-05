@@ -26,7 +26,7 @@ $arr_fields=range(1,$field_count);
 $num_arr=array_rand($arr_fileds,1);
 //$num=$num_arr[];
 print_r($arr_fileds);
-echo $filed_count."<br />";
+echo "Field_count - ".$filed_count.";<br />";
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
