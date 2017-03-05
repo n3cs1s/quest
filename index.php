@@ -19,8 +19,8 @@ $count=$connect->query("SELECT COUNT(*) FROM ".$table);
 //Вибирає останню додану загадкку, для вибору випадкової - створити $arr_fields=range(1,$field_count), потім $num=array_rand($array_fileds,1);
 
 $num=1;
-while($cnt = $count->fetch_assoc()) {
-        $field_count=$cnt["field_count"];
+while($cnt = mysqli_fetch_row($count)) {
+        echo $cnt[0]."; ".$cnt[1]."<br />";
     }
 $arr_fields=range(1,$field_count);
 $num_arr=array_rand($arr_fileds,1);
