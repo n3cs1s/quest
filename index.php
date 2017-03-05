@@ -11,8 +11,10 @@ if($connect->connect_error){
 	die("Can't connect to database".$connect->connect_error);
 }
 $num =1;
+
 $count=$connect->query("SELECT COUNT(*) FROM ".$table);
-echo $count;
+echo $count[];
+
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
 $connect->query("SET character_set_results=utf8");
