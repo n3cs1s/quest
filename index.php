@@ -7,7 +7,7 @@ get from database $id, $quest, $answ;
 */
 $connect = new mysqli($server,$user,$pass,$db);
 if($connect->connect_error){
-	die("Can't connect to database");
+	die("Can't connect to database".$connect->connect_error);
 }
 $num =1;
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
