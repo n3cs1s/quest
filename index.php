@@ -1,0 +1,75 @@
+<?php
+$vid=3;
+$arr=range(1,10);
+$pictures=array_rand($arr,9);
+$pictures[]=$vid;
+shuffle($pictures);
+?>
+
+<html>
+<head>
+<title>
+Відгадай.com
+</title>
+<link rel="stylesheet" text="text/css" href="css/styles.css" />
+<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="splash_img">
+<div class="back-img">
+
+<?php
+while(list(,$picture) = each($pictures)){
+	echo "<img src=\"/images/$picture.jpg\" />";
+}
+/*
+<img src="/images/3.jpg" />
+<img src="/images/vesna.jpg" />
+<img src="/images/3.jpg" />
+<img src="/images/vesna.jpg" />
+<img src="/images/3.jpg" />
+<img src="/images/vesna.jpg" />
+<img src="/images/3.jpg" />
+<img src="/images/vesna.jpg" />
+<img src="/images/3.jpg" />
+<img src="/images/vesna.jpg" />
+*/
+?>
+</div>
+
+<div class="main-img">
+<h1>Відгадай.com!</h1>
+<div class="main-quest">
+<?php
+
+
+echo "Хто малюнки на вікні уночі зробив мені?";
+
+
+?>
+</div>
+</div>
+</div>
+<div id="res">
+<h1>
+Мороз!</h1>
+</div>
+<div class="footer">
+<div class="content">
+<ul>
+<li><a href="/about.php">About</a></li>
+<li><a href="/contact.php">Contact</a></li>
+</ul>
+</div>
+</div>
+
+<script>
+$("img").click(function(){
+	if( $(this).attr("src") == "/images/3.jpg" ){
+		$("#res").css("background-image","url("+$(this).attr("src")+")");
+		$("#res").show();
+		$(".back-img").slideUp();
+		$(location).attr('href',"#res");
+	}
+});
+</script>
