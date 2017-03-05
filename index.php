@@ -20,7 +20,7 @@ $count=$connect->query("SELECT COUNT(*) FROM ".$table);
 
 $num=1;
 while($cnt = mysqli_fetch_row($count)) {
-        echo $cnt[0]."; ".$cnt[1]."<br />";
+        echo $cnt[0]."; 1-".$cnt[1].";<br />";
     }
 $arr_fields=range(1,$field_count);
 $num_arr=array_rand($arr_fileds,1);
