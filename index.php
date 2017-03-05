@@ -25,7 +25,7 @@ while($cnt = $count->fetch_assoc()) {
 $arr_fields=range(1,$field_count);
 $num_arr=array_rand($arr_fileds,1);
 //$num=$num_arr[];
-echo $num_arr;
+echo "Num_arr - ".$num_arr." ;<br />";
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
