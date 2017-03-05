@@ -13,7 +13,7 @@ if($connect->connect_error){
 $num =1;
 
 $count=$connect->query("SELECT COUNT(*) FROM ".$table);
-echo $count[];
+printf($count);
 
 $sql = "SELECT * FROM ".$table." WHERE id=".$num;
 
