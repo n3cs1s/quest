@@ -6,7 +6,7 @@ get from database $id, $quest, $answ;
 
 */
 
-$id=3;
+$id=1;
 $quest="Хто малюнки на вікні уночі зробив мені?";
 $answ="Мороз";
 $arr=range(1,10);
