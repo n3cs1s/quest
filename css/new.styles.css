@@ -1,0 +1,180 @@
+body{
+background:#ecf2d9;
+}
+.splash_img{
+	display:flex;
+	display:-webkit-flex;
+	width:100vw;
+	height:80vh;
+	max-height:80vh;
+	flex-wrap:wrap;
+	-webkit-flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+}
+.back-img{
+z-index:1;
+position:fixed;
+top:0;
+width:99vw;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
+.back-img img{
+width:300px;
+height:300px;
+opacity:0.4;
+border-radius:6px;
+margin:20px;
+}
+.back-img img:hover{
+	opacity:0.9;
+	cursor:pointer;
+}
+.main-img{
+background:#f1f1f1 url("/images/zyma.jpg");
+background-size:cover;
+opacity:0.8;
+border:3px solid #fff;
+border-radius:6px;
+min-width:35vw;
+max-width:50vw;
+min-height:35vh;
+margin:0 auto;
+text-align:center;
+line-height:2em;
+font-size:2em;
+font-weight:400;
+z-index:9999;
+}
+.main-img:hover{
+	opacity:1;
+	cursor:pointer;
+}
+.main-img h1{
+	color:white;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.main-quest{
+	background:#f1f1f1;
+	opacity:0.8;
+	border:1px solid white;
+	border-radius:6px;
+	margin:10px 20px 25px 20px;
+	text-shadow:-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+}
+.footer{
+position:relative;
+}
+.footer .content{
+	position:sticky;
+	top:80vh;
+	background:#fff;
+	width:90vw;
+	min-height:20px;
+	border:1px solid #fff;
+	border-radius:6px;
+	margin:0 auto;
+}
+.footer .content ul{
+list-style:none;
+display:flex;
+display:-webkit-flex;
+flex-wrap:wrap;
+-webkit-flex-wrap:wrap;
+width:100%;
+justify-content:center;
+}
+.footer .content li a{
+	display:block;
+	min-width:140px;
+	
+}
+#res{
+	display:none;
+	width:50vw;
+	height:80vh;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	border-radius:6px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#res h1{
+	display:block;
+	margin:0 auto;
+	min-width:200px;
+	text-align:center;
+	line-height:2em;
+	vertical-align:middle;
+	font-size:4em;
+	font-weight:600;
+	color:white;
+	padding-top:100px;
+	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#res input{
+	margin: 0 auto;
+	min-width: 150px;
+	display: block;
+	min-height: 50px;
+	font-size: 1.5em;
+	padding: 15px 40px;	
+	opacity:0.8;
+}
+#res input:hover{
+	opacity:1;
+}
+#about{
+	display:none;
+	width:50vw;
+	height:80vh;
+	border-radius:6px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#contact{
+	display:none;
+	width:50vw;
+	height:80vh;
+	border-radius:6px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+@media only screen and (max-width: 1280px) {
+	.back-img img{
+		width:200px;
+		height:200px;
+	 }
+	
+}
+ @media only screen and (max-width: 1024px) {
+	.back-img img{
+		width:100px;
+		height:100px;
+	 }
+	 .main-img{
+		 font-size:1.5em;
+	 }
+	 #res h1{
+		 font-size:2em;
+		 padding-top:100px;
+	 }
+}
+@media only screen and (max-width: 360px) {
+	.back-img img{
+		width:65px;
+		height:65px;
+	 }
+	 .main-img{
+		 font-size:1em;
+	 }
+	.main-img h1{
+		display:none;
+	}
+}
