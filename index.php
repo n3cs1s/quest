@@ -129,7 +129,7 @@ echo $quest;
 	<li><a href="/">Головна</a></li>
 	<li><a href="#about" onclick="$('.back-img').slideUp();$('#about').show();">Про нас</a></li>
 <li><a href="#contact" onclick="$('.back-img').slideUp();$('#contact').show();">Контакти</a></li>
-
+	<li>Ваш результат:<span id="score"></span></li>
 </ul>
 </div>
 </div>
@@ -147,6 +147,7 @@ $("img").click(function(){
 		scr++;
 		Cookies.set('score', scr);
 		console.log("scr = "+scr+";");
+		$('#score').text(scr);
 		$(location).attr('href',"#res");
 	}
 });
