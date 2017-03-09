@@ -69,8 +69,9 @@ header('Content-Type: text/html; charset=utf-8');
 <div class="back-img">
 
 <?php
+	$i=0;
 while(list(,$picture) = each($pictures)){
-	echo "<img src=\"/images/$picture.jpg\" />";
+	echo "<img src=\"/images/$picture.jpg\" style='order:'".$i++." />";
 }
 
 ?>
