@@ -48,7 +48,7 @@ line-height:2em;
 font-size:2em;
 font-weight:400;
 	flex-grow:2;
-	order:2;
+	order:-1;
 }
 .main-img:hover{
 	opacity:1;
