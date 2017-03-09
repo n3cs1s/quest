@@ -49,7 +49,7 @@ if ($result->num_rows > 0) {
 
 $connect->close();
 
-$arr=range(1,7);
+$arr=range(1,$field_count);
 $pictures=array_rand($arr,6);
 $pictures[]=$id;
 shuffle($pictures);
