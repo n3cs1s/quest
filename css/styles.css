@@ -109,7 +109,14 @@ justify-content:center;
 	text-shadow:-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 #res input{
-	margin:0 auto;
-	width:100px;
-	
+	margin: 0 auto;
+	min-width: 150px;
+	display: block;
+	min-height: 50px;
+	font-size: 1.5em;
+	padding: 15px 40px;	
+	opacity:0.8;
+}
+#res input:hover{
+	opacity:1;
 }
