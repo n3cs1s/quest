@@ -63,6 +63,8 @@ header('Content-Type: text/html; charset=utf-8');
 </title>
 <link rel="stylesheet" text="text/css" href="css/new.styles.css" />
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="/js/js.cookie-2.1.3.min.js"></script>
+
 </head>
 <body>
 <div class="splash_img">
@@ -139,6 +141,8 @@ $("img").click(function(){
 		$("#res").css("background-image","url("+$(this).attr("src")+")");
 		$("#res").show();
 		$(".back-img").slideUp();
+		var scr=Cookies.get('score')?:0;
+		Cookies.set('score', ++scr);
 		$(location).attr('href',"#res");
 	}
 });
