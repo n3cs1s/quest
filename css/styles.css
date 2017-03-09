@@ -154,5 +154,7 @@ justify-content:center;
 	 .main-img{
 		 font-size:1em;
 	 }
-	
+	.main-img h1{
+		display:none;
+	}
 }
