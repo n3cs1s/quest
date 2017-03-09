@@ -95,6 +95,7 @@ justify-content:center;
 	background-size:contain;
 	background-repeat:no-repeat;
 	background-position:center;
+	border-radius:6px;
 }
 #res h1{
 	display:block;
