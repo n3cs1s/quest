@@ -124,8 +124,8 @@ echo $quest;
 <div class="content">
 <ul>
 	<li><a href="/">Головна</a></li>
-	<li><a href="#about" onclick="$('#about').show();">Про нас</a></li>
-<li><a href="#contact" onclick="">Контакти</a></li>
+	<li><a href="#about" onclick="$('.back-img').slideUp();$('#about').show();">Про нас</a></li>
+<li><a href="#contact" onclick="$('.back-img').slideUp();$('#contact').show();">Контакти</a></li>
 
 </ul>
 </div>
