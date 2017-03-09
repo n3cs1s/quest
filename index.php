@@ -123,8 +123,10 @@ echo $quest;
 <div class="footer">
 <div class="content">
 <ul>
-<li><a href="#about">Про нас</a></li>
-<li><a href="#contact">Контакти</a></li>
+	<li><a href="/">Головна</a></li>
+	<li><a href="#about" onclick="$('#about').show();">Про нас</a></li>
+<li><a href="#contact" onclick="">Контакти</a></li>
+
 </ul>
 </div>
 </div>
