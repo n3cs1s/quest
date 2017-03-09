@@ -107,6 +107,7 @@ echo $quest;
 	
 ?>
 	</h1>
+	<input type="button" onclick="location.reload()" value="Хочу ще!" />
 </div>
 <div class="footer">
 <div class="content">
