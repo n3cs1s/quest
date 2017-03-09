@@ -25,6 +25,7 @@ height:300px;
 opacity:0.4;
 border-radius:6px;
 margin-left:10px;
+	margin-top:10px;
 }
 .back-img img:hover{
 	opacity:0.9;
