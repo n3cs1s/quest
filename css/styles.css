@@ -90,12 +90,13 @@ justify-content:center;
 }
 #res{
 	display:none;
-	width:100vw;
+	width:50vw;
 	height:80vh;
-	background-size:contain;
+	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:center;
 	border-radius:6px;
+	margin:0 auto;
 	margin-bottom:10px;
 }
 #res h1{
