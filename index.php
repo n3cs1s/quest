@@ -103,7 +103,7 @@ echo $quest;
 <div id="res">
 <h1>
 <?php
-	echo $answ."!:):):)";
+	echo $answ."!";
 	
 ?>
 	</h1>
