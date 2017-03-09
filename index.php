@@ -136,7 +136,7 @@ echo $quest;
 
 	
 <script>
-$(this).onload(function(){
+$(function(){
 	var scr=Cookies.get('score');
 	if(scr=="NaN")scr=0;
 	$('#score').text(scr);
