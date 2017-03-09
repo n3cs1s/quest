@@ -49,8 +49,8 @@ if ($result->num_rows > 0) {
 
 $connect->close();
 
-$arr=range(1,10);
-$pictures=array_rand($arr,9);
+$arr=range(1,12);
+$pictures=array_rand($arr,11);
 $pictures[]=$id;
 shuffle($pictures);
 
