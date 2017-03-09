@@ -157,8 +157,8 @@ justify-content:center;
 }
  @media only screen and (max-width: 1024px) {
 	.back-img img{
-		width:100px;
-		height:100px;
+		width:150px;
+		height:150px;
 	 }
 	 .main-img{
 		 font-size:1.5em;
@@ -170,8 +170,9 @@ justify-content:center;
 }
 @media only screen and (max-width: 360px) {
 	.back-img img{
-		width:65px;
+		width:55px;
 		height:65px;
+		margin:5px;
 	 }
 	 .main-img{
 		 font-size:1em;
