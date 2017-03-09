@@ -14,11 +14,10 @@ background:#ecf2d9;
 	position:relative;
 }
 .back-img{
-top:0;
 width:99vw;
 	display:flex;
 	flex-wrap:wrap;
-	justify-content:center;
+	justify-content:space-around;
 	align-items:center;
 }
 .back-img img{
@@ -28,6 +27,7 @@ opacity:0.4;
 border-radius:6px;
 margin:20px;
 	flex-grow:1;
+	order:1;
 }
 .back-img img:hover{
 	opacity:0.9;
