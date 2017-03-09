@@ -72,24 +72,13 @@ header('Content-Type: text/html; charset=utf-8');
 while(list(,$picture) = each($pictures)){
 	echo "<img src=\"/images/$picture.jpg\" />";
 }
-/*
-<img src="/images/3.jpg" />
-<img src="/images/vesna.jpg" />
-<img src="/images/3.jpg" />
-<img src="/images/vesna.jpg" />
-<img src="/images/3.jpg" />
-<img src="/images/vesna.jpg" />
-<img src="/images/3.jpg" />
-<img src="/images/vesna.jpg" />
-<img src="/images/3.jpg" />
-<img src="/images/vesna.jpg" />
-*/
-?>
-</div>
 
+?>
 <div class="main-img">
 <h1>Відгадай.com!</h1>
 <div class="main-quest">
+
+	
 <?php
 
 
@@ -100,6 +89,8 @@ echo $quest;
 </div>
 </div>
 </div>
+	</div>
+
 <div id="res">
 <h1>
 <?php
