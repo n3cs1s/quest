@@ -92,7 +92,7 @@ justify-content:center;
 	display:none;
 	width:100vw;
 	height:80vh;
-	background-size:cover;
+	background-size:80vw;
 }
 #res h1{
 	display:block;
