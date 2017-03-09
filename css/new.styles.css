@@ -148,7 +148,7 @@ justify-content:center;
 	margin:0 auto;
 	margin-bottom:10px;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1366px) {
 	.back-img img{
 		width:200px;
 		height:200px;
