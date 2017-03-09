@@ -130,4 +130,10 @@ justify-content:center;
 		width:100px;
 		height:100px;
 	 }
+	 .main-img{
+		 font-size:1.5em;
+	 }
+	 #res h1{
+		 font-size:2em;
+	 }
 }
