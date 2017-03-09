@@ -144,6 +144,7 @@ $("img").click(function(){
 		var scr=0;
 		scr=Cookies.get('score');
 		Cookies.set('score', ++scr);
+		console.log(scr);
 		$(location).attr('href',"#res");
 	}
 });
