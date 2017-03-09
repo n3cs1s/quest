@@ -18,6 +18,10 @@ z-index:1;
 position:fixed;
 top:0;
 width:100vw;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
 }
 .back-img img{
 width:300px;
