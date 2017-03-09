@@ -129,13 +129,18 @@ echo $quest;
 	<li><a href="/">Головна</a></li>
 	<li><a href="#about" onclick="$('.back-img').slideUp();$('#about').show();">Про нас</a></li>
 <li><a href="#contact" onclick="$('.back-img').slideUp();$('#contact').show();">Контакти</a></li>
-	<li>Ваш результат:<span id="score"></span></li>
+	<li>Ваш результат: <span id="score"></span></li>
 </ul>
 </div>
 </div>
 
 	
 <script>
+$("document").onload(function(){
+	var scr=Cookies.get('score');
+	if(scr=="NaN")scr=0;
+	$('#score').text(scr);
+}
 $("img").click(function(){
 	if( $(this).attr("src") == "/images/"+<?php echo $id; ?>+".jpg" ){
 		$("#res").css("background-image","url("+$(this).attr("src")+")");
