@@ -145,7 +145,7 @@ $("img").click(function(){
 		scr=Cookies.get('score');
 		scr++;
 		Cookies.set('score', scr);
-		console.log('scr');
+		console.log("scr = "+scr+";");
 		$(location).attr('href',"#res");
 	}
 });
