@@ -141,7 +141,8 @@ $("img").click(function(){
 		$("#res").css("background-image","url("+$(this).attr("src")+")");
 		$("#res").show();
 		$(".back-img").slideUp();
-		var scr=Cookies.get('score')?:0;
+		var scr=0;
+		scr=Cookies.get('score');
 		Cookies.set('score', ++scr);
 		$(location).attr('href',"#res");
 	}
