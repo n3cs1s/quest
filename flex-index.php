@@ -71,7 +71,8 @@ header('Content-Type: text/html; charset=utf-8');
 <?php
 	$i=0;
 while(list(,$picture) = each($pictures)){
-	echo "<img src=\"/images/$picture.jpg\" style='order:'".$i++." />";
+	$i++;
+	echo "<img src=\"/images/$picture.jpg\" style='order:$i' />";
 }
 
 ?>
