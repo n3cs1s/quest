@@ -107,7 +107,17 @@ echo $quest;
 	
 ?>
 	</h1>
-	<input type="button" onclick="window.location.href=\"/\"" value="Хочу ще!" />
+	<input type="button" onclick="$(location).attr('href', 'http://відгадай.com/')" value="Хочу ще!" />
+</div>
+
+<div id="about">
+	<h1>Про нас</h1>
+	
+</div>
+<div id="contact">
+	<h1>Контакти</h1>
+	<h3>тел. 0967612308<br />
+		емейл:pavel.primavera[@]gmail.com</h3>
 </div>
 
 <div class="footer">
@@ -117,15 +127,6 @@ echo $quest;
 <li><a href="#contact">Контакти</a></li>
 </ul>
 </div>
-</div>
-<div id="about">
-	<h1>Про нас</h1>
-	
-</div>
-<div id="contact">
-	<h1>Контакти</h1>
-	<h3>тел. 0967612308<br />
-		емейл:pavel.primavera[@]gmail.com</h3>
 </div>
 
 	
