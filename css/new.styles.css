@@ -167,6 +167,14 @@ justify-content:center;
 		 font-size:2em;
 		 padding-top:100px;
 	 }
+	 
+}
+@media only screen and (max-width: 800px) {
+	.back-img img{
+		width:125px;
+		height:100px;
+		margin:5px;
+	 }
 }
 @media only screen and (max-width: 360px) {
 	.back-img img{
