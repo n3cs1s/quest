@@ -126,6 +126,20 @@ justify-content:center;
 #res input:hover{
 	opacity:1;
 }
+#about{
+	width:50vw;
+	height:80vh;
+	border-radius:6px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
+#contact{
+	width:50vw;
+	height:80vh;
+	border-radius:6px;
+	margin:0 auto;
+	margin-bottom:10px;
+}
 @media only screen and (max-width: 1280px) {
 	.back-img img{
 		width:200px;
