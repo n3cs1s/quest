@@ -16,7 +16,7 @@ background:#ecf2d9;
 .back-img{
 width:99vw;
 	display:flex;
-	flex-wrap:wrap;
+	flex-flow:row wrap;
 	justify-content:space-around;
 	align-content:space-around;
 }
