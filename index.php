@@ -141,8 +141,9 @@ $("img").click(function(){
 		$("#res").css("background-image","url("+$(this).attr("src")+")");
 		$("#res").show();
 		$(".back-img").slideUp();
-		var scr=0;
-		scr=Cookies.get('score');
+		
+		var scr=Cookies.get('score');
+		if(scr=="NaN")scr=0;
 		scr++;
 		Cookies.set('score', scr);
 		console.log("scr = "+scr+";");
