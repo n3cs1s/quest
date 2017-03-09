@@ -27,7 +27,7 @@ opacity:0.4;
 border-radius:6px;
 margin:20px;
 	flex-grow:1;
-	order:1;
+	
 }
 .back-img img:hover{
 	opacity:0.9;
