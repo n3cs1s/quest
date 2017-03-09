@@ -109,6 +109,15 @@ echo $quest;
 	</h1>
 	<input type="button" onclick="location.reload()" value="Хочу ще!" />
 </div>
+
+<div class="footer">
+<div class="content">
+<ul>
+<li><a href="#about">Про нас</a></li>
+<li><a href="#contact">Контакти</a></li>
+</ul>
+</div>
+</div>
 <div id="about">
 	<h1>Про нас</h1>
 	
@@ -119,15 +128,7 @@ echo $quest;
 		емейл:pavel.primavera[@]gmail.com</h3>
 </div>
 
-<div class="footer">
-<div class="content">
-<ul>
-<li><a href="#about">Про нас</a></li>
-<li><a href="#contact">Контакти</a></li>
-</ul>
-</div>
-</div>
-
+	
 <script>
 $("img").click(function(){
 	if( $(this).attr("src") == "/images/"+<?php echo $id; ?>+".jpg" ){
