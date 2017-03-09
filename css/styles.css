@@ -17,7 +17,7 @@ background:#ecf2d9;
 z-index:1;
 position:fixed;
 top:0;
-width:100vw;
+width:99vw;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
@@ -28,8 +28,7 @@ width:300px;
 height:300px;
 opacity:0.4;
 border-radius:6px;
-margin-left:10px;
-	margin-top:10px;
+margin:20px;
 }
 .back-img img:hover{
 	opacity:0.9;
