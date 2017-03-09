@@ -143,7 +143,8 @@ $("img").click(function(){
 		$(".back-img").slideUp();
 		var scr=0;
 		scr=Cookies.get('score');
-		Cookies.set('score', ++scr);
+		scr++;
+		Cookies.set('score', scr);
 		console.log('scr');
 		$(location).attr('href',"#res");
 	}
