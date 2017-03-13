@@ -160,6 +160,7 @@ echo $quest;
 	<li><a href="#about" onclick="$('.back-img').slideUp();$('#about').show();">Про нас</a></li>
 <li><a href="#contact" onclick="$('.back-img').slideUp();$('#contact').show();">Контакти</a></li>
 	<li>Ваш результат: <span id="score"></span></li>
+	<li style="display:button;" onclick="Cookies.remove('got_it');Cookies.remove('score');location.reload();">Скинути результати!</li>
 </ul>
 </div>
 </div>
