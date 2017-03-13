@@ -9,7 +9,8 @@ get from database $id, $quest, $answ;
 $get=$_COOKIE["got_it"];
 if($get){
 	$get_it=json_decode($get);
-	print_r($get_it);
+}else{
+	$get_it=[];
 }
 
 $connect = new mysqli($server,$user,$pass,$db);
@@ -19,39 +20,50 @@ if($connect->connect_error){
 
 $connect->query("SET character_set_results=utf8");
 
-$count=$connect->query("SELECT COUNT(*) FROM ".$table);
+$count=$connect->query("SELECT COUNT(*) FROM ".$table.";");
 
 //$field_count =$count["field_count"]; 
 //Вибирає останню додану загадкку, для вибору випадкової - створити $arr_fields=range(1,$field_count), потім $num=array_rand($array_fileds,1);
 
 $num=1;
+$field_count=0;
 while($cnt = mysqli_fetch_row($count)) {
-        $field_count= $cnt[0];
+        $field_count= $cnt[0]; //Отримали загальну кількість всіх загадок
     }
-$arr_fields=range(1,$field_count);
 
-$num_arr=$arr_fields[mt_rand(0, count($arr_fields) - 1)];
-$num=$num_arr;
+$unanswered_count=$connect->query("SELECT COUNT(*) FROM ".$table." WHERE id NOT IN (".implode(",",$get_it).");");
+$un_count=0;
+while($cnt = mysqli_fetch_row($unanswered_count)) {
+        $un_count= $cnt[0]; //отримали кількість на які ще не відповідали
+    }
 
-$sql = "SELECT * FROM ".$table." WHERE id=".$num;
+$id=0;
+$quest="Всі загадки розгадані!";
+$answ="Вітаємо!";
+
+if($un_count!=0){ //if unanswered count >0 we get random question else
+	$arr_fields=range(1,$un_count);//select random from un_count
+
+	$num_arr=$arr_fields[mt_rand(0, count($arr_fields) - 1)];
+	$num=$num_arr;
+
+	$sql = "SELECT * FROM ".$table." WHERE id=".$num;//get all of random unanswered id
 
 
-$result = $connect->query($sql);
-$id=1;
-$quest="?";
-$answ="Мороз";
+	$result = $connect->query($sql);
 
-
-if ($result->num_rows > 0) {
+	if ($result->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
-        $id=$row["id"];
-	$quest=$row["quest"];
-	$answ=$row["answ"];
-    }
-} else {
-    echo "0 results";
+    		while($row = $result->fetch_assoc()) {
+        		$id=$row["id"];
+			$quest=$row["quest"];
+			$answ=$row["answ"];
+    		}
+	} else {
+    		echo "0 results";
+	}
 }
+
 
 $connect->close();
 
