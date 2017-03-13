@@ -32,7 +32,7 @@ while($cnt = mysqli_fetch_row($count)) {
     }
 
 $unanswered_count=$connect->query("SELECT COUNT(*) FROM ".$table." WHERE id NOT IN (".implode(",",$get_it).");");
-var_dump($unanswered_count);
+print_r($unanswered_count);
 
 $un_count=0;
 while($cnt = mysqli_fetch_row($unanswered_count)) {
