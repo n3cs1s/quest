@@ -31,7 +31,7 @@ while($cnt = mysqli_fetch_row($count)) {
         $field_count= $cnt[0]; //Отримали загальну кількість всіх загадок
     }
 
-$unanswered_count=$connect->query("SELECT COUNT(*) FROM ".$table." WHERE id NOT IN (".implode(",",$get_it).");");
+$unanswered_count=$connect->query("SELECT COUNT(id) FROM ".$table." WHERE id NOT IN (".implode(",",$get_it).");");
 print_r($unanswered_count);
 
 $un_count=0;
