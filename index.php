@@ -8,7 +8,7 @@ get from database $id, $quest, $answ;
 
 $get=$_COOKIE["got_it"];
 if($get){
-	$get_it=str_split($get);
+	$get_it=explode("%2C",$get);
 	print_r($get_it);
 }
 
