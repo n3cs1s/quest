@@ -149,7 +149,8 @@ $("img").click(function(){
 		$(".back-img").slideUp();
 		
 		var scr=Cookies.get('score');
-		var get_it=$.parseJSON($.cookie("got_it"));//JSON.parse(Cookies.get('got_it'));
+		var get=Cookies.get("got_it");
+		var get_it=$.parseJSON(get);//JSON.parse(Cookies.get('got_it'));
 		
 		console.log(get_it);
 		
