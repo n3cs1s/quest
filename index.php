@@ -139,9 +139,9 @@ echo $quest;
 $(function(){
 	var scr=Cookies.get('score');
 	if(scr=="NaN")scr=0;
-	Cookies.get(scr);
+	Cookies.set(scr);
 	$('#score').text(scr);
-	
+	console.log(scr);
 });
 $("img").click(function(){
 	if( $(this).attr("src") == "/images/"+<?php echo $id; ?>+".jpg" ){
