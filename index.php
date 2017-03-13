@@ -36,6 +36,7 @@ $un_count=0;
 while($cnt = mysqli_fetch_row($unanswered_count)) {
         $un_count= $cnt[0]; //отримали кількість на які ще не відповідали
     }
+echo $un_count."<br />";
 
 $id=0;
 $quest="Всі загадки розгадані!";
