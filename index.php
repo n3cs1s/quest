@@ -150,7 +150,11 @@ $("img").click(function(){
 		$(".back-img").slideUp();
 		
 		var scr=Cookies.get('score');
-		//if(!scr)scr=0;
+		
+		var got_it=['<?php echo $id; ?>'];
+		var arr_got=JSON.stringify(got_it);
+		Cookies.set('got_it',arr_got);
+		
 		scr++;
 		Cookies.set('score', scr);
 		console.log("scr = "+scr+";");
