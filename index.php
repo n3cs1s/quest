@@ -10,7 +10,7 @@ $get=$_COOKIE["got_it"];
 if($get){
 	$get_it=json_decode($get);
 }else{
-	$get_it=[];
+	$get_it=[0,];
 }
 
 $connect = new mysqli($server,$user,$pass,$db);
