@@ -39,10 +39,10 @@ $un_count=$field_count;
         $un_count= $cnt[0]; //отримали кількість на які ще не відповідали
     }*/
 $un_count=$unanswered_count->num_rows;
-echo $un_count."<br />";
+//echo $un_count."<br />";
 
 $id=0;
-$quest="Всі загадки розгадані!";
+$quest="Всі загадки розгадані!<br />ВІТАЄМО!";
 $answ="Вітаємо!";
 
 if($un_count!=0){ //if unanswered count >0 we get random question else
