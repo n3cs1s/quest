@@ -138,7 +138,7 @@ echo $quest;
 <script>
 $(function(){
 	var scr=Cookies.get('score');
-	if(scr=="NaN")scr=0;
+	if(!scr)scr=0;
 	Cookies.set(scr);
 	$('#score').text(scr);
 	console.log(scr);
