@@ -6,6 +6,12 @@ get from database $id, $quest, $answ;
 
 */
 
+$get=$_COOKIE["got_it"];
+if($get){
+	$get_it=str_split($get);
+	print_r($get_it);
+}
+
 $connect = new mysqli($server,$user,$pass,$db);
 if($connect->connect_error){
 	die("Can't connect to database".$connect->connect_error);
