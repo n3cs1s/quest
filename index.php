@@ -151,11 +151,11 @@ $("img").click(function(){
 		var scr=Cookies.get('score');
 		var get=Cookies.get("got_it");
 		if(get) var get_it=$.parseJSON(get);//JSON.parse(Cookies.get('got_it'));
-		get.push(<?php echo $id; ?>);
+		get_it.push(<?php echo $id; ?>);
 		console.log(get_it);
 		
 		
-		var arr_got=JSON.stringify(get);
+		var arr_got=JSON.stringify(get_it);
 		Cookies.set('got_it',arr_got);
 		
 		scr++;
