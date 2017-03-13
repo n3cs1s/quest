@@ -31,13 +31,14 @@ while($cnt = mysqli_fetch_row($count)) {
         $field_count= $cnt[0]; //Отримали загальну кількість всіх загадок
     }
 
-$unanswered_count=$connect->query("SELECT COUNT(id) FROM ".$table." WHERE id NOT IN (".implode(",",$get_it).");");
-print_r($unanswered_count);
+$unanswered_count=$connect->query("SELECT * FROM ".$table." WHERE id NOT IN (".implode(",",$get_it).") LIMIT 10;");
+//print_r($unanswered_count);
 
-$un_count=0;
-while($cnt = mysqli_fetch_row($unanswered_count)) {
+$un_count=$field_count;
+/*while($cnt = mysqli_fetch_row($unanswered_count)) {
         $un_count= $cnt[0]; //отримали кількість на які ще не відповідали
-    }
+    }*/
+$un_count=$unanswered_count->num_rows;
 echo $un_count."<br />";
 
 $id=0;
@@ -45,17 +46,18 @@ $quest="Всі загадки розгадані!";
 $answ="Вітаємо!";
 
 if($un_count!=0){ //if unanswered count >0 we get random question else
-	$arr_fields=range(1,$un_count);//select random from un_count
+	//$arr_fields=range(1,$un_count);//select random from un_count
 
-	$num_arr=$arr_fields[mt_rand(0, count($arr_fields) - 1)];
-	$num=$num_arr;
+	//$num_arr=$arr_fields[mt_rand(0, count($arr_fields) - 1)];
+	
+	//$num=$num_arr;
 
-	$sql = "SELECT * FROM ".$table." WHERE id=".$num;//get all of random unanswered id
+	//$sql = "SELECT * FROM ".$table." WHERE id=".$num;//get all of random unanswered id
 
 
-	$result = $connect->query($sql);
+	//$result = $connect->query($sql);
 
-	if ($result->num_rows > 0) {
+/*	if ($result->num_rows > 0) {
     // output data of each row
     		while($row = $result->fetch_assoc()) {
         		$id=$row["id"];
@@ -64,7 +66,14 @@ if($un_count!=0){ //if unanswered count >0 we get random question else
     		}
 	} else {
     		echo "0 results";
-	}
+	}*/
+	unanswered_count->data_seek(mt_rand(0, $un_count-1));
+	$row=unanswered_count->fetch_row();
+        		$id=$row[0];
+			$quest=$row[1];
+			$answ=$row[2];
+	unanswered_count->close();
+	
 }
 
 
