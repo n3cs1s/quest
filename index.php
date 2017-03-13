@@ -150,7 +150,7 @@ $("img").click(function(){
 		
 		var scr=Cookies.get('score');
 		var get=Cookies.get("got_it");
-		var get_it=$.parseJSON(get);//JSON.parse(Cookies.get('got_it'));
+		if(get) var get_it=$.parseJSON(get);//JSON.parse(Cookies.get('got_it'));
 		
 		console.log(get_it);
 		
