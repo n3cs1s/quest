@@ -139,7 +139,7 @@ echo $quest;
 $(function(){
 	var scr=Cookies.get('score');
 	if(!scr)scr=0;
-	Cookies.set(scr);
+	Cookies.set('score',scr);
 	$('#score').text(scr);
 	console.log(scr);
 });
@@ -150,7 +150,7 @@ $("img").click(function(){
 		$(".back-img").slideUp();
 		
 		var scr=Cookies.get('score');
-		if(scr=="NaN")scr=0;
+		//if(!scr)scr=0;
 		scr++;
 		Cookies.set('score', scr);
 		console.log("scr = "+scr+";");
