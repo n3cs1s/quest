@@ -67,12 +67,12 @@ if($un_count!=0){ //if unanswered count >0 we get random question else
 	} else {
     		echo "0 results";
 	}*/
-	unanswered_count->data_seek(mt_rand(0, $un_count-1));
+/*	unanswered_count->data_seek(mt_rand(0, $un_count-1));
 	$row=unanswered_count->fetch_row();
         		$id=$row[0];
 			$quest=$row[1];
 			$answ=$row[2];
-	unanswered_count->close();
+	unanswered_count->close();*/
 	
 }
 
