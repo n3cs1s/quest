@@ -149,10 +149,11 @@ $("img").click(function(){
 		$(".back-img").slideUp();
 		
 		var scr=Cookies.get('score');
-		var get_it=JSON.parse(Cookies.get('got_it'));
+		var get_it=$.parseJSON($.cookie("got_it"));//JSON.parse(Cookies.get('got_it'));
+		
 		console.log(get_it);
 		
-		var got_it=['<?php echo $id; ?>'];
+		var got_it=[<?php echo $id; ?>];
 		var arr_got=JSON.stringify(got_it);
 		Cookies.set('got_it',arr_got);
 		
