@@ -6,4 +6,5 @@ if(!$id||!$tm_stmp){
   return false;
  }
  echo "$id<br />";
+print_r(date_parse($tm_stmp));
 ?>
