@@ -138,6 +138,10 @@ justify-content:space-around;
 	margin:0 auto;
 	margin-bottom:10px;
 }
+#about div{
+	line-height:1.7em;
+	font-size:1.38em;
+}
 #contact{
 	display:none;
 	width:50vw;
