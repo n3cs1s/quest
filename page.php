@@ -1,7 +1,8 @@
 <?php
 $id=$_GET['id'];
-if(!$id){
-  echo "cannot get id!<br />";
+$tm_stmp=$_GET['tm_stmp'];
+if(!$id||!$tm_stmp){
+  echo "cannot get id or tm!<br />";
   return false;
  }
  echo "$id<br />";
