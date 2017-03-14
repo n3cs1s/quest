@@ -8,5 +8,14 @@ if(!$id||!$tm_stmp){
  echo "$id<br />";
 $date=date_create();
 date_timestamp_set($date,$tm_stmp);
-echo date_format($date,"U = Y-m-d H:i:s");
+$year_get= date_format($date,"Y");
+
+$l_date=date_create();
+$local_year = date_format($l_date,"Y");
+
+if($year!=$local_year){
+  echo "This is another year dude!<br />";
+  return false;
+}
+echo "All checked!<br />";
 ?>
