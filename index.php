@@ -147,7 +147,7 @@ echo $quest;
 	</div>
 	<div>
 		<center>Проект створено за підтримки:</center> <br />
-		<a href="http://pmu.in.ua/">Педагогічного музею України"</a><br />
+		<a href="http://pmu.in.ua/">Педагогічного музею України"</a> | <a href="https://www.facebook.com/%D0%9F%D0%B5%D0%B4%D0%B0%D0%B3%D0%BE%D0%B3%D1%96%D1%87%D0%BD%D0%B8%D0%B9-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8-100969013399655/?pnref=story">Педагогічний музей України</a><br />
 		<a href="https://folk.in.ua/">Соціальної мережі "ФОЛК"</a>
 	</div>
 </div>
