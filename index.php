@@ -146,9 +146,9 @@ echo $quest;
 		Відгадуйте та розвивайтесь разом із нами!<br /><br />
 	</div>
 	<div>
-		Проект створено за підтримки <br />
-		<a href="http://pmu.in.ua/">Педагогічного музею України"</a> та <br />
-		Сайту: <a href="https://folk.in.ua/">"ФОЛК"</a>
+		<center>Проект створено за підтримки:</center> <br />
+		<a href="http://pmu.in.ua/">Педагогічного музею України"</a><br />
+		<a href="https://folk.in.ua/">Соціальної мережі "ФОЛК"</a>
 	</div>
 </div>
 <div id="contact">
