@@ -6,5 +6,7 @@ if(!$id||!$tm_stmp){
   return false;
  }
  echo "$id<br />";
-print_r(date_parse($tm_stmp));
+$date=date_create();
+date_timestamp_set($date,$tm_stmp);
+echo date_format($date,"U = Y-m-d H:i:s");
 ?>
