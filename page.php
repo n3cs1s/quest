@@ -13,8 +13,8 @@ $year_get= date_format($date,"Y");
 $l_date=date_create();
 $local_year = date_format($l_date,"Y");
 
-if($year!=$local_year){
-  echo "$year - $local_year <br />";
+if($year_get!=$local_year){
+  echo "$year_get - $local_year <br />";
   echo "This is another year dude!<br />";
   return false;
 }
