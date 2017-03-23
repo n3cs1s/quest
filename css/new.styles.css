@@ -241,4 +241,9 @@ justify-content:space-around;
 		height:65px;
 		margin:2px;
 	 }
+	#about{
+		width:80vw;
+		font-size:1em;
+		line-height:1em;
+		height:inherit;
 }
