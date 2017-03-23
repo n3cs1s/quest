@@ -224,7 +224,11 @@ justify-content:space-around;
 	 }
 	.main-img h1{
 		display:none;
-	}	
+	}
+	body{
+		border: 5px solid #abc;
+		border-image: url("/images/250x50-3.png") 49% round;
+	}
 }
 @media only screen and (max-width: 360px) {
 	.back-img img{
