@@ -234,6 +234,7 @@ justify-content:space-around;
 	}
 	.splash_img{
 		height:auto;
+		max-height:initial;
 	}
 }
 @media only screen and (max-width: 360px) {
@@ -291,6 +292,7 @@ justify-content:space-around;
 	}
 	.splash_img{
 		height:auto;
+		
 	}
 	
 }
