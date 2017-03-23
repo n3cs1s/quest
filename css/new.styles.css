@@ -197,6 +197,10 @@ justify-content:space-around;
 		 font-size:2em;
 		 padding-top:100px;
 	 }
+	 #about{
+		 height:calc;
+		 height:-moz-calc;
+	 }
 	 
 }
 @media only screen and (max-width: 800px) {
