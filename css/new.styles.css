@@ -166,12 +166,16 @@ justify-content:space-around;
 		width:190px;
 		height:200px;
 	 }
+	.footer .content{
+		width:85vw;
+	}
 	.footer .content ul{
 		padding-top:5px;
 		padding-bottom:5px;
 		padding-left:unset;
-		width:85vw;
+		
 	}
+
 	.main-img{
 		font-size:1.5em;
 	}
