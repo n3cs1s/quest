@@ -1,12 +1,13 @@
 body{
 background:#ecf2d9;
-	border:5px solid #abc;
-		border-image:url("/images/250x50-3.png") 10% round;
+border: 50px solid #abc;
+border-image: url("/images/250x50-3.png") 49% round;
+	margin:0;
+	
 }
 .splash_img{
 	display:flex;
 	display:-webkit-flex;
-	width:100vw;
 	height:80vh;
 	max-height:80vh;
 	flex-wrap:wrap;
