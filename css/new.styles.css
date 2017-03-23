@@ -170,6 +170,9 @@ justify-content:space-around;
 		padding-top:5px;
 		padding-bottom:5px;
 	}
+	.main-img{
+		font-size:1.5em;
+	}
 	
 }
  @media only screen and (max-width: 1024px) {
