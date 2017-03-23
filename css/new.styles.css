@@ -169,6 +169,7 @@ justify-content:space-around;
 	.footer .content ul{
 		padding-top:5px;
 		padding-bottom:5px;
+		padding-left:unset;
 	}
 	.main-img{
 		font-size:1.5em;
