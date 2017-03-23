@@ -229,6 +229,9 @@ justify-content:space-around;
 		border: 5px solid #abc;
 		border-image: url("/images/250x50-3.png") 49% round;
 	}
+	.main-quest{
+		font-size:unset;
+	}
 }
 @media only screen and (max-width: 360px) {
 	.back-img img{
