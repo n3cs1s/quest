@@ -153,7 +153,10 @@ echo $quest;
 <div id="contact">
 	<h1>Контакти</h1>
 	<h3>тел. 0967612308<br />
-		емейл:pavel.primavera[@]gmail.com</h3>
+		емейл:pavel.primavera[@]gmail.com<br />
+		twitter:<a href="https://twitter.com/vidgadai_com">ВідгадайКо</a><br />
+		folk:<a href="https://folk.in.ua/profile/vidgad">ВідгадайКо</a><br />
+		facebook:<a href="facebook.com">ВідгадайКо</a></h3>
 </div>
 
 <div class="footer">
