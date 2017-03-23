@@ -244,21 +244,25 @@ justify-content:space-around;
 	#about{
 		width:80vw;
 		font-size:1em;
-		line-height:1em;
+		line-height:calc;
+		line-height:-moz-calc;
 		height:inherit;
 	}
 	#about div{
 		font-size:0.8em;
-		line-height:1em;
+		line-height:-moz-calc;
+		line-height:calc;
 	}
 	#contact{
 		width:80vw;
 		font-size:1em;
-		line-height:1em;
+		line-height:-moz-calc;
+		line-height:calc;
 		height:inherit;
 	}
 	#contact div{
 		font-size:0.8em;
-		line-height:normal;
+		line-height:-moz-calc;
+		line-height:calc;
 	}
 }
