@@ -79,7 +79,7 @@ position:relative;
 .footer .content{
 	position:sticky;
 	top:80vh;
-	background:#fff;
+	background:#23fab1;
 	width:90vw;
 	min-height:20px;
 	border:1px solid #000;
@@ -95,9 +95,15 @@ flex-wrap:wrap;
 -webkit-flex-wrap:wrap;
 width:100%;
 justify-content:space-around;
+	color:#000;
 }
 .footer .content li a{
 	display:block;
+	color:#000;
+	text-decoration:none;
+}
+.footer .content li a:hover{
+	text-decoration:underline;
 }
 #res{
 	display:none;
