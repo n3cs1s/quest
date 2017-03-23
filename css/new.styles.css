@@ -198,8 +198,8 @@ justify-content:space-around;
 		 padding-top:100px;
 	 }
 	 #about{
-		 height:calc;
-		 height:-moz-calc;
+		 height:auto;
+		 
 	 }
 	 
 }
@@ -254,7 +254,7 @@ justify-content:space-around;
 		font-size:1em;
 		line-height:calc;
 		line-height:-moz-calc;
-		height:inherit;
+		height:auto;
 	}
 	#about div{
 		font-size:0.8em;
@@ -266,7 +266,7 @@ justify-content:space-around;
 		font-size:1em;
 		line-height:-moz-calc;
 		line-height:calc;
-		height:inherit;
+		height:auto;
 	}
 	#contact div{
 		font-size:0.8em;
