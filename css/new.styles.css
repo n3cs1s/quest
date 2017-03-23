@@ -251,4 +251,14 @@ justify-content:space-around;
 		font-size:0.8em;
 		line-height:1em;
 	}
+	#contact{
+		width:80vw;
+		font-size:1em;
+		line-height:1em;
+		height:inherit;
+	}
+	#contact div{
+		font-size:0.8em;
+		line-height:1em;
+	}
 }
