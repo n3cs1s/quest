@@ -196,6 +196,9 @@ justify-content:space-around;
 		width:125px;
 		height:150px;
 	 }
+	 .main-img h1{
+		 display:none;
+	 }
 	 .main-img{
 		 font-size:1.5em;
 	 }
