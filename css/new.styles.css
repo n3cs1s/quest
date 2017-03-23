@@ -207,6 +207,9 @@ justify-content:space-around;
 		 height:auto;
 		 
 	 }
+	 .main-quest{
+		 font-size:initial;
+	 }
 	 
 }
 @media only screen and (max-width: 800px) {
