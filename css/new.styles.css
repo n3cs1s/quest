@@ -173,6 +173,10 @@ justify-content:space-around;
 	.main-img{
 		font-size:1.5em;
 	}
+	#about{
+		width:70vw;
+	}
+
 	#about div {
 		font-size:1.3em;
 	}
