@@ -3,7 +3,7 @@ background:#ecf2d9;
 border: 50px solid #abc;
 border-image: url("/images/250x50-3.png") 49% round;
 	margin:0;
-	
+	border-bottom:25px solid #abc;
 }
 .splash_img{
 	display:flex;
@@ -85,6 +85,7 @@ position:relative;
 	border:1px solid #000;
 	border-radius:6px;
 	margin:0 auto;
+	margin-bottom:15px;
 }
 .footer .content ul{
 list-style:none;
