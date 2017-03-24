@@ -1,10 +1,17 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
+
+$upload='';
+if(isset($_FILES["file"]["name"])){
+  $upload= $_FILES["file"]["name"];
+  $content=file_get_contents($_FILES['file']['tmp_name']);
+}
+
 ?>
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
 
 <body>
-  <div id="target">Nothing
+  <div id="target"><?php echo "$upload<br />$content"; ?>
   </div>
 <form id="formWithFiles">
 <input type="file" name="file">
@@ -23,7 +30,7 @@ $(document).ready(function (e) {
             cache: false,
             processData:false,
             success: function(data){
-                $("#target").html(data);
+                $("#target").html("Success");
             }           
        });
     }));
