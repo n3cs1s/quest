@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=utf-8');
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
 
 <body>
-<form id="formWithFiles">
+<form id="formWithFiles" method="POST" enctype="multipart/form-data">
 <input type="file" name="file">
 <input type="submit" value="submit" title="submit">
 </form>
