@@ -11,7 +11,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 <script>
 $.ajax({
-  url: 'destination.txt', 
+  url: '/braile.php', 
   type: 'POST',
   data: new FormData($('#formWithFiles')[0]), // The form with the file inputs.
   processData: false                          // Using FormData, no need to process data.
