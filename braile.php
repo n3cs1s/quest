@@ -19,7 +19,7 @@ $(document).ready(function (e) {
     $("#formWithFiles").on('submit',(function(e) {
         e.preventDefault();
         $.ajax({
-            url: "braile.php",
+            url: "upload.php",
             type: "POST",
             data:  new FormData(this),
             contentType: false,
