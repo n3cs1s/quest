@@ -152,11 +152,11 @@ echo $quest;
 </div>
 <div id="contact">
 	<h1>Контакти</h1>
-	<h3>тел. 0967612308<br />
-		емейл:pavel.primavera[@]gmail.com<br />
+	<span>тел. 0967612308<br />
+		емейл:pavel.primavera@gmail.com<br />
 		twitter:<a href="https://twitter.com/vidgadai_com">ВідгадайКо</a><br />
 		folk:<a href="https://folk.in.ua/profile/vidgad">ВідгадайКо</a><br />
-		facebook:<a href="facebook.com">ВідгадайКо</a></h3>
+		facebook:<a href="http://fb.me/VidgadaiKo">ВідгадайКо</a></span>
 </div>
 
 <div class="footer">
