@@ -5,7 +5,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 <body>
 <form id="formWithFiles">
-<input type="file" name="file"></input>
+<input type="file" name="file">
 <input type="submit" value="submit" title="submit">
 </form>
 
