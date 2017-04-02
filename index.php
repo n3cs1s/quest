@@ -95,7 +95,7 @@ header('Content-Type: text/html; charset=utf-8');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
-ВідгадайКо: <?php echo substr($quest,0,30); ?>
+ВідгадайКо: <?php echo mb_substr($quest,0,30); ?>
 </title>
 <link rel="stylesheet" text="text/css" href="css/new.styles.css" />
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
