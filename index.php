@@ -89,7 +89,7 @@ header('Content-Type: text/html; charset=utf-8');
 ?>
 
 <meta charset="UTF-8">
-  <meta name="description" content="ВідгадайКо - <?php echo $quest; ?>">
+  <meta name="description" content="ВідгадайКо - Сервіс загадок: <?php echo $quest; ?>">
   <meta name="keywords" content="загадки, ребуси, головоломки, сервіс загадок, Відгадайко">
   <meta name="author" content="Pavlo Stepanovych">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
