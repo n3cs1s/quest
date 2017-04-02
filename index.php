@@ -88,8 +88,14 @@ header('Content-Type: text/html; charset=utf-8');
 
 ?>
 
+<meta charset="UTF-8">
+  <meta name="description" content="ВідгадайКо - <?php echo $quest; ?>">
+  <meta name="keywords" content="загадки, ребуси, головоломки, сервіс загадок, Відгадайко">
+  <meta name="author" content="Павло Степанович">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>
-Відгадай.com
+ВідгадайКо: <?php echo substr($quest,0,30); ?>
 </title>
 <link rel="stylesheet" text="text/css" href="css/new.styles.css" />
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
@@ -109,7 +115,7 @@ while(list(,$picture) = each($pictures)){
 
 ?>
 <div class="main-img">
-<h1>Відгадай.com!</h1>
+<h1>ВідгадайКо</h1>
 <div class="main-quest">
 
 	
