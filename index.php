@@ -167,6 +167,8 @@ echo $quest;
 <li><a href="#contact" onclick="$('#contact').show();">Контакти</a></li>
 	<li>Ваш результат: <span id="score"></span></li>
 	<li><a href="" style="display:button;" onclick="Cookies.remove('got_it',{path:'/'});Cookies.remove('score',{path:'/'});location.reload();">Скинути результати!</a></li>
+	<li><a href="/page.php?id=<?php echo $id; ?>&tm_stmp=<?php echo time(); ?>">Поділитись загадкою</a></li>
+
 </ul>
 </div>
 </div>
